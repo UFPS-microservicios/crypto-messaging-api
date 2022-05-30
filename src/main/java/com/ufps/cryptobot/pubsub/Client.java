@@ -24,10 +24,10 @@ public class Client implements PubSubClientI {
     private TopicName exchangeTopicName;
 
     public Client() {
-        this.projectID = System.getenv("PROJECT_ID");
-        this.newsTopicID = System.getenv("NEWS_TOPIC_ID");
+        this.projectID = "cryptobot-345516";
+        this.newsTopicID = "messaging-topic-news";
         this.newsTopicName = TopicName.of(this.projectID, this.newsTopicID);
-        this.exchangeTopicID = System.getenv("EXCHANGE_TOPIC_ID");
+        this.exchangeTopicID = "messaging-topic-exchange";
         this.exchangeTopicName = TopicName.of(this.projectID, this.exchangeTopicID);
     }
 
